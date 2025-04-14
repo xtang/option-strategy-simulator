@@ -1,0 +1,11 @@
+version: '3.8' # Specifies the Compose file version
+
+services:
+  app: # The name of the service (can be anything)
+    build: . # Build the image from the Dockerfile in the current directory
+    image: option-simulator # Name the image that is built
+    container_name: options-app # Specific name for the running container
+    ports:
+      - "8501:8501" # Map host port 8501 to container port 8501
+    restart: unless-stopped # Automatically restart the container unless manually stopped
+    # Environment variables are inherited from the Dockerfile ENV instruction 
