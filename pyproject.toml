@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "options_strategy_simulator"
+version = "0.1.0"
+description = "Simulates and plots P/L for stock options strategies."
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.21",         # Added numpy dependency
+    "matplotlib>=3.4",     # Added matplotlib dependency
+    "fastapi>=0.100",      # Added FastAPI
+    "uvicorn[standard]>=0.20", # Added Uvicorn with standard dependencies
+    "jinja2>=3.0",         # Added Jinja2
+    "streamlit>=1.20",         # Added Streamlit
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/options_stock" # Optional: Replace with your repo URL
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+# Optional: Add uv configuration if needed, though often uv uses the standard sections above.
+# [tool.uv]
+# ... uv specific settings ... 
