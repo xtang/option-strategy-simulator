@@ -1,7 +1,10 @@
 import streamlit as st
 import simulator # Import our simulation logic
 
-st.set_page_config(layout="wide") # Use wider layout
+st.set_page_config(
+    page_title="Option Strategy Simulator", # Set the browser tab title
+    layout="wide"
+)
 
 st.title("Options Strategy Simulator")
 
